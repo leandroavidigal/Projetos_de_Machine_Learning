@@ -1,0 +1,2 @@
+Projeto de Previsão de Estoque usando Amazon SageMaker
+Este projeto tem como objetivo criar um modelo de previsão de estoque utilizando Amazon SageMaker Canvas. O projeto envolve quatro etapas principais: Selecionar Dataset, Construir/Treinar, Analisar e Prever.
