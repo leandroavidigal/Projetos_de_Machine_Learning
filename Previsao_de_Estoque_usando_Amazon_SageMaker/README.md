@@ -6,23 +6,21 @@ Este projeto tem como objetivo criar um modelo de previsão de estoque utilizand
 
 ### 1. Selecionar Dataset
 
-1. Navegue até a pasta `datasets` deste repositório. Esta pasta contém os datasets que você poderá escolher para treinar e testar seu modelo de Machine Learning (ML).
-2. Sinta-se à vontade para gerar ou enriquecer seus próprios datasets. Quanto mais você se engajar, mais relevante esse projeto será em seu portfólio.
-3. Escolha o dataset que você usará para treinar seu modelo de previsão de estoque.
-4. Faça o upload do dataset no SageMaker Canvas.
+1. Navegue até a pasta `datasets` deste repositório. Esta pasta contém os datasets que você poderá escolher para treinar e testar seu modelo de Machine Learning (ML), sendo utilizado neste o `dataset-1000-com-preco-promocional-e-renovacao-estoque.csv`
+2. Escolha o dataset que você usará para treinar seu modelo de previsão de estoque.
+3. Faça o upload do dataset no SageMaker Canvas.
 
 ### 2. Construir/Treinar
 
-1. No SageMaker Canvas, importe o dataset que você selecionou.
-2. Configure as variáveis de entrada e saída de acordo com os dados:
+1. No SageMaker Canvas foi realizado a seguindo configuração:
    - **Coluna que identifica exclusivamente os itens:** `ID_PRODUTO`
    - **Coluna que agrupa a previsão pelos valores da coluna:** `FLAG_PROMOCAO`
    - **Coluna que contém os registros de data e hora:** `DATA_EVENTO`
-3. Inicie o treinamento do modelo. Isso pode levar algum tempo, dependendo do tamanho do dataset.
+2. Inicie o treinamento do modelo. Isso pode levar algum tempo, dependendo do tamanho do dataset.
 
 ### 3. Analisar
 
-Após o treinamento, examine as métricas de performance do modelo:
+Após o treinamento foi obtido as seguintes métricas de performance do modelo:
 
 - **Avg. wQL (Average Weighted Quantile Loss):** `0.523`
   - **Descrição:** A perda quantílica ponderada média é uma métrica que avalia a precisão das previsões em diferentes quantis.
@@ -54,6 +52,8 @@ Após o treinamento, examine as métricas de performance do modelo:
   - **P50 (Linha Verde):** Mostra a previsão mediana de estoque.
   - **P90 (Linha Dourada):** Mostra previsões mais altas de estoque.
 
+![Grafico_Flag1](https://github.com/leandroavidigal/Projetos_de_Machine_Learning/blob/main/Previsao_de_Estoque_usando_Amazon_SageMaker/datasets/Flag1_Previsao_de_Estoque_usando_Amazon_SageMaker.png) 
+
 #### Item `1007` com `FLAG_PROMOCAO` = 0
 
 - **Demanda Histórica (Linha Azul):** A linha azul mostra grandes flutuações na demanda histórica do item `1007` antes de 7 de fevereiro de 2024.
@@ -61,6 +61,9 @@ Após o treinamento, examine as métricas de performance do modelo:
   - **P10 (Linha Rosa):** Mostra previsões de estoque mais baixas.
   - **P50 (Linha Verde):** Mostra a previsão mediana de estoque.
   - **P90 (Linha Dourada):** Mostra previsões mais altas de estoque.
+
+![Grafico_Flag0](https://github.com/leandroavidigal/Projetos_de_Machine_Learning/blob/main/Previsao_de_Estoque_usando_Amazon_SageMaker/datasets/Flag0_Previsao_de_Estoque_usando_Amazon_SageMaker.png) 
+
 
 ### Conclusões
 
