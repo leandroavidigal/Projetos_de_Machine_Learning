@@ -84,16 +84,6 @@ Após o treinamento foi obtido as seguintes métricas de performance do modelo:
 2. Exporte os resultados e analise as previsões geradas.
 3. Documente suas conclusões e qualquer insight obtido a partir das previsões.
 
-## Estrutura do Repositório
-├── datasets
-│ ├── dataset1.csv
-│ └── dataset2.csv
-├── README.md
-└── scripts
-├── train_model.py
-└── analyze_results.py
-
-
 ## Ferramentas Utilizadas
 
 - **Amazon SageMaker:** Plataforma de Machine Learning para construção, treinamento e implantação de modelos.
