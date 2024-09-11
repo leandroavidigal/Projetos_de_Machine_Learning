@@ -46,4 +46,56 @@ O dataset utilizado está disponível no arquivo **LoanData.csv** incluído nest
 - **Joblib** - Para salvar o modelo treinado.
 - **Jupyter Notebook** - Para desenvolvimento interativo.
 
+## Instruções de Instalação
 
+Siga as instruções abaixo para clonar o repositório e configurar o ambiente de desenvolvimento.
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/loan-approval-prediction.git
+
+2. Navegue até o diretório do projeto:
+   ```bash
+   cd loan-approval-prediction
+
+3. Crie um ambiente virtual (opcional, mas recomendado):
+   ```bash
+   python -m venv .venv
+
+4. Ative o ambiente virtual: No Windows:
+   ```bash
+   .venv\Scripts\activate
+
+No macOS/Linux:
+   ``bash
+   source .venv/bin/activate
+
+5. Instale as dependências necessárias:
+   ```bash
+   pip install -r requirements.txt
+
+6. Abra o notebook Jupyter:
+   ```bash
+   jupyter notebook
+
+7. Abra o arquivo loan_approval_project.ipynb e execute as células passo a passo para reproduzir o projeto.
+
+## Uso
+Carregue os dados: O arquivo LoanData.csv será utilizado para carregar o dataset no notebook.
+Siga as etapas descritas no notebook para realizar a análise exploratória, tratamento de valores nulos, balanceamento de classes e transformação de variáveis.
+O modelo é treinado usando o Random Forest Classifier e o desempenho é avaliado com a métrica de acurácia, além de um relatório de classificação e matriz de confusão.
+O modelo final é salvo como loan_approval_model.pkl e pode ser utilizado para previsões futuras.
+O arquivo loan_test_data.csv contém os dados de teste para verificar o desempenho em um conjunto separado.
+
+##Resultados
+Acurácia do modelo: 82% no conjunto de teste.
+O modelo é balanceado usando a técnica SMOTE para lidar com o desbalanceamento de classes.
+Utilizamos validação cruzada para garantir a robustez do modelo, obtendo uma acurácia média de 79% com 5-fold cross-validation.
+Deploy
+Este modelo pode ser integrado em uma aplicação web para previsões em tempo real. A parte 2 deste projeto (a ser adicionada) envolverá a construção de uma interface utilizando Streamlit ou Flask para permitir que usuários finais façam previsões diretamente inserindo seus dados.
+
+##Contribuindo
+Se você deseja contribuir para este projeto, sinta-se à vontade para abrir uma issue ou enviar um pull request com melhorias, sugestões de novos recursos ou correções de bugs.
+
+##Licença
+Este projeto está licenciado sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
