@@ -7,7 +7,23 @@ Este repositório foi criado com o objetivo de compartilhar conhecimento e demon
 
 ## Projetos
 
-### 1. **Loan Approval Prediction - Machine Learning Project**
+### 1. **Databricks, Apache Spark e Machine Learning**
+**Descrição:**
+Este projeto explora o uso de Databricks e Apache Spark para análise de dados em um ambiente distribuído e a implementação de modelos de Machine Learning. Ele inclui o uso de DataFrames, Delta Lake, visualizações de dados, regressão linear, construção de pipelines e tuning de hiperparâmetros.
+
+**Principais etapas:**
+- Manipulação de grandes volumes de dados com DataFrames e Delta Lake
+- Criação de dashboards interativos
+- Construção de pipelines de Machine Learning
+- Otimização de modelos e tuning de hiperparâmetros
+- Implementação de redes neurais com Multi-Layer Perceptron (MLP)
+
+**Resultados:**
+Os projetos abordados neste módulo demonstraram alta eficiência no processamento de grandes volumes de dados e na criação de modelos preditivos escaláveis, aplicáveis a cenários corporativos de alto desempenho.
+
+---
+
+### 2. **Loan Approval Prediction - Machine Learning Project**
 **Descrição:**  
 Este projeto tem como objetivo prever a aprovação de empréstimos com base em características pessoais e financeiras dos solicitantes, como renda, histórico de crédito, e status de casamento. O modelo foi treinado e avaliado utilizando diversas métricas de desempenho, e foi preparado para implementação em um ambiente de produção.
 
@@ -22,7 +38,7 @@ Auxiliar instituições financeiras a tomar decisões rápidas e eficazes em rel
 
 ---
 
-### 2. **Previsão de Estoque usando Amazon SageMaker**
+### 3. **Previsão de Estoque usando Amazon SageMaker**
 **Descrição:**  
 Neste projeto, foi desenvolvido um modelo de previsão de estoque utilizando o Amazon SageMaker. O objetivo é prever a demanda futura com base em variáveis como promoções e datas de eventos. A implementação incluiu a criação de um pipeline completo, desde a seleção do dataset até a análise e previsão dos resultados.
 
@@ -37,7 +53,7 @@ As métricas de desempenho mostraram que o modelo tem uma precisão razoável pa
 
 ---
 
-### 3. **Classificação de Câncer Baseada em Expressões Genéticas**
+### 4. **Classificação de Câncer Baseada em Expressões Genéticas**
 **Descrição:**  
 Este projeto visa classificar dois tipos de câncer (Leucemia Linfoblástica Aguda e Leucemia Mieloide Aguda) utilizando dados de expressão genética. Modelos de Regressão Logística e Principal Component Regression (PCR) foram implementados para avaliar a precisão preditiva e o impacto da redução de dimensionalidade por PCA.
 
@@ -59,6 +75,7 @@ Todos os projetos utilizam as seguintes bibliotecas e ferramentas:
 - **Matplotlib** e **Seaborn** para visualização de dados
 - **Jupyter Notebook** para desenvolvimento e análise interativa
 - **Amazon SageMaker** para execução de modelos em escala
+- **Databricks e Apache Spark** para manipulação de dados em larga escala e modelagem de Machine Learning
 - **PCA** para redução de dimensionalidade
 
 ## Como Contribuir
